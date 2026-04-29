@@ -1,0 +1,88 @@
+===================================
+Table of Contents
+===================================
+
+Visual Studio
+1:36
+Créer un projet
+1:42
+Configurer votre nouveau projet
+1:51
+System; 'using using using using System.Text; using…
+2:09
+StudiuM
+3:24
+Réunion Zoom pour cours en bimodal
+4:03
+using System; using using System.Linq; using System.Text;…
+4:54
+using System.Text; using System.Threading.Tasks;
+8:54
+.Text;
+10:51
+asks;
+11:00
+if (a a b) return a;
+11:33
+rrogram
+11:39
+void Main(string[] args)
+12:12
+namespace Test4Fev
+13:18
+est {2}11, agel,
+16:18
+if (a > b)
+16:30
+int tempo;
+19:09
+int tempo; if (a < b)
+19:33
+ut leMax); lus grande valeur entre {0} et {1} est {2}",…
+20:33
+age2 = 25;
+21:06
+agel,
+21:30
+public static void
+25:06
+internal class Program
+32:18
+PlusPetitPlusGrand(ref agel, ref age2
+32:27
+using System.Collections.Generic; using
+34:00
+max = a;
+35:18
+leMax; int agel = 18, age2 = 25;
+35:24
+n, string msg)
+45:51
+int nbPers
+47:36
+out double mini, out double
+52:54
+ds = { 65.8, 72.5, 60.1, 78.7, 60.3, 72.4
+1:00:30
+aximum est
+1:01:06
+static void Main(string[] args) grand);
+1:02:36
+double petit, grand;
+1:04:54
+mini = maxi
+1:07:15
+using System; using System.Collections.Generic; using using…
+1:11:33
+PlusPetitPlusGrand(ref agel, ref age2 plus grande valeur…
+1:13:42
+int i, j, indMin;
+1:18:21
+using System;
+1:22:33
+static void Permuter(ref double a, ref double b)
+1:24:36
+indMin = i;
+1:27:36
+indMin = i; j<n; j++)
+1:31:18

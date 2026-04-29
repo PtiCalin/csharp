@@ -1,36 +1,223 @@
-# Gitignore file for the project
+# ============================================================================
+# C# and .NET
+# ============================================================================
 
-## IDE files
-/.vscode/
+# Build results
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+[Ww][Ii][Nn]32/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+bld/
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
 
-## Development files
-/.claude/
+# Visual Studio cache/options
+.vs/
+.vscode/settings.json
+.vscode/launch.json
+.vscode/tasks.json
 
-## System files
-.DS_Store
-Thumbs.db
+# Visual Studio auto generated files
+Generated\ Files/
 
-## Environment files
-.env
+# MSTest test Results
+[Tt]est[Rr]esult*/
+[Bb]uild[Ll]og.*
 
-## Build files
-/dist/
-/build/
+# NUnit
+*.VisualState.xml
+TestResult.xml
+nunit-*.xml
 
-## Node modules
-/node_modules/
+# xUnit
+*.xunit.runner.json
 
-## Python virtual environment
-/__pycache__/
-/venv/
-/.venv/
+# Build Results of an ATL Project
+[Dd]ebugPS/
+[Rr]eleasePS/
+dlldata.c
 
-## Miscellaneous
-/logs/
-*.log
-/cache/
-/temp/
+# .NET Core
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# NuGet Packages
+*.nupkg
+*.snupkg
+**/[Pp]ackages/*
+!**/[Pp]ackages/build/
+*.nuget.props
+*.nuget.targets
+
+# NuGet v3's project.json files produces more ignorable files
+*.nuget.cache
+
+# Files built by Visual Studio
+*_i.c
+*_p.c
+*_h.h
+*.ilk
+*.meta
+*.obj
+*.iobj
+*.pch
+*.pdb
+*.ipdb
+*.pgc
+*.pgd
+*.rsp
+*.sbr
+*.tlb
+*.tli
+*.tlh
 *.tmp
-/backups/
+*.tmp_proj
+*_wpftmp.csproj
+*.log
+*.vspscc
+*.vssscc
+.builds
+*.pidb
+*.svclog
+*.scc
+
+# Visual Studio profiler
+*.psess
+*.vsp
+*.vspx
+*.sap
+
+# Visual Studio Trace Files
+*.e2e
+
+# ReSharper
+_ReSharper*/
+*.[Rr]e[Ss]harper
+*.DotSettings.user
+
+# JetBrains Rider
+.idea/
+*.sln.iml
+
+# CodeRush
+.cr/local
+.cr/personal
+
+# Python Tools for Visual Studio (PTVS)
+__pycache__/
+*.pyc
+
+# User-specific files
+*.rsuser
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Mono auto generated files
+mono_crash.*
+
+# Windows image file caches
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+
+# Dump file
+*.stackdump
+
+# Folder config file
+[Dd]esktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# ============================================================================
+# OS specific
+# ============================================================================
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Linux
+*~
+.directory
+.Trash-*
+
+# ============================================================================
+# Environment and Secrets
+# ============================================================================
+
+# Environment files
+.env
+.env.local
+.env.*.local
+*.env
+
+# User secrets
+secrets.json
+
+# ============================================================================
+# IDEs and Editors
+# ============================================================================
+
+# VSCode (keep extensions.json but ignore workspace-specific settings)
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/*.code-snippets
+!.vscode/README.md
+
+# Visual Studio Code - Workspace
+*.code-workspace
+
+# ============================================================================
+# Documentation and Resources
+# ============================================================================
+
+# Temporary documentation files
+*.tmp.md
+*.draft.md
+
+# ============================================================================
+# Miscellaneous
+# ============================================================================
+
+# Backup files
 *.bak
-*.swp
+*.backup
+*.old
+
+# Logs
+logs/
+*.log
+
+# Cache
+cache/
+temp/
+tmp/
+
+# Package managers
+node_modules/
+bower_components/
+
+# ============================================================================
+# Project-specific
+# ============================================================================
+
+# Learning progress tracking (optional - uncomment if you want to keep private)
+# progress/
+# notes/personal/

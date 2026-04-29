@@ -1,89 +1,144 @@
-# School Project Repository Template
+# C# Learning Hub
 
-This repository provides a simple and structured base for academic work.
-It is designed to centralize documentation, resources, visual assets, and contribution tracking.
+Ce dépôt est mon hub de connaissances personnel et centralisé pour l'apprentissage de C# et .NET.
+Il sert de référence structurée pour la théorie, les exemples pratiques, les exercices, et les ressources documentaires.
 
-## Project Overview
+## 📚 Vue d'ensemble
 
-- Project title: [Project Title]
-- Course: [Course Name or Code]
-- Institution: [Institution Name]
-- Team: [Team Name or Individual]
-- Submission date: [YYYY-MM-DD]
+- **Propriétaire:** PtiCalin (Charlie)
+- **Objectif:** Maîtrise progressive de C# et .NET
+- **Contexte:** Support académique et développement de compétences personnelles
+- **Langues:** Français (documentation) / Anglais (code et commentaires)
 
-## Academic Objectives
+## 🎯 Objectifs d'apprentissage
 
-- Define the problem statement or research question clearly.
-- Describe a reproducible methodology.
-- Present results supported by evidence.
-- Discuss limitations and future work.
+- Maîtriser les fondamentaux du langage C# (types, contrôle de flux, opérateurs)
+- Comprendre et appliquer la programmation orientée objet (POO)
+- Exploiter les fonctionnalités modernes de C# (records, pattern matching, nullable types)
+- Développer avec LINQ et les patterns fonctionnels
+- Gérer l'asynchrone avec async/await et Task
+- Construire des applications ASP.NET Core et utiliser Entity Framework Core
+- Appliquer les principes SOLID et les design patterns
+- Écrire des tests unitaires efficaces (xUnit, NUnit, Moq)
 
-## Repository Structure
+## 📂 Structure du dépôt
 
 ```text
-.
-├── README.md
+csharp/
+├── README.md                 # Ce fichier
 ├── LICENSE
-├── AUTHORS.md
-├── ATTRIBUTIONS.md
-├── CHANGE-LOG.md
-├── .github/
-│   ├── SECURITY.md
-│   ├── templates/
-│   ├── versionning/
-│   └── workflows/
-└── files/
-    ├── assets/
-    │   └── ASSETS.md
-    ├── instructions/
-    │   └── generic-school-project-outline.md
-    └── resources/
-        └── RESOURCES.md
+├── .claude/
+│   └── CLAUDE.md            # Contexte pour l'assistance IA
+├── 01-theory/               # Théorie et concepts fondamentaux
+│   ├── basics/              # Syntaxe, types, opérateurs
+│   ├── oop/                 # Programmation orientée objet
+│   ├── advanced/            # Features modernes, LINQ, async
+│   └── patterns/            # Design patterns et bonnes pratiques
+├── 02-examples/             # Exemples de code annotés
+│   ├── console-apps/        # Applications console
+│   ├── web-apis/            # APIs ASP.NET Core
+│   └── design-patterns/     # Implémentations de patterns
+├── 03-exercices/            # Exercices pratiques et défis
+│   ├── beginner/            # Niveau débutant
+│   ├── intermediate/        # Niveau intermédiaire
+│   └── advanced/            # Niveau avancé
+├── 04-resources/            # Liens, documentation, tutoriels
+│   ├── official-docs/       # Documentation Microsoft officielle
+│   ├── tutorials/           # Tutoriels et guides
+│   └── tools/               # Outils et extensions recommandés
+└── 05-references/           # Références techniques et standards
+    ├── language-specs/      # Spécifications du langage
+    └── api-docs/            # Documentation des APIs .NET
 ```
 
-## Quick Start
+## 🚀 Démarrage rapide
 
-1. Clone the repository.
-2. Create a working branch from main.
-3. Add content in the appropriate location:
-    - files/resources for sources and references
-    - files/assets for diagrams, images, and presentation material
-    - ATTRIBUTIONS.md for external source traceability
-4. Update CHANGE-LOG.md for any significant change.
-5. Open a Pull Request.
+### Prérequis
 
-## Expected Deliverables
+- [.NET SDK](https://dotnet.microsoft.com/download) (version 6.0 ou supérieure recommandée)
+- Éditeur de code : [Visual Studio](https://visualstudio.microsoft.com/), [VS Code](https://code.visualstudio.com/), ou [Rider](https://www.jetbrains.com/rider/)
+- Git pour le versionnement
 
-- Written report (Markdown or PDF)
-- Reproducible artifacts (code, scripts, data, captures)
-- Presentation material (slides, diagrams)
+### Navigation
 
-## Quality and Reproducibility
+1. **Apprendre la théorie** : Commencez par `01-theory/` pour comprendre les concepts
+2. **Voir des exemples** : Explorez `02-examples/` pour des implémentations concrètes
+3. **Pratiquer** : Réalisez les exercices dans `03-exercices/`
+4. **Approfondir** : Consultez `04-resources/` et `05-references/` pour aller plus loin
 
-- Use clear and consistent file names.
-- Keep source information up to date in ATTRIBUTIONS.md.
-- Document authors and contributions in AUTHORS.md.
-- Verify that results can be reproduced using repository files.
+### Workflow d'apprentissage recommandé
 
-## Key File Maintenance Guide
+1. Lire la théorie d'un concept dans `01-theory/`
+2. Étudier les exemples correspondants dans `02-examples/`
+3. Pratiquer avec les exercices de `03-exercices/`
+4. Documenter ses notes et insights personnels
+5. Créer ses propres exemples et projets
 
-- README.md: project overview, objectives, and usage
-- CHANGE-LOG.md: project evolution log
-- AUTHORS.md: contributors and roles
-- ATTRIBUTIONS.md: technical and academic references
-- files/assets/ASSETS.md: visual and media asset register
-- files/resources/RESOURCES.md: resource register
+## 📖 Conventions de code
 
-## Evaluation Criteria (Example)
+Ce dépôt suit les conventions officielles de C# et .NET :
 
-- Technical rigor
-- Clarity of explanation
-- Reproducibility
-- Code and documentation quality
+- **Naming** : PascalCase pour classes/méthodes, camelCase pour variables locales
+- **Indentation** : 4 espaces
+- **Style** : Conventions [C# Coding Conventions](https://docs.microsoft.com/en-us/dotnet/csharp/fundamentals/coding-style/coding-conventions)
+- **Versions** : Préférence pour C# 10+ et .NET 6+
+- **Principes** : SOLID, DRY, KISS, YAGNI
 
-## Contact
+## 🎓 Domaines couverts
 
-For questions: [your.name@example.com]
+### Fondamentaux
+- Types de données et variables
+- Structures de contrôle
+- Méthodes et paramètres
+- Collections (List, Dictionary, etc.)
+
+### Programmation orientée objet
+- Classes et objets
+- Encapsulation, héritage, polymorphisme
+- Interfaces et classes abstraites
+- Propriétés, indexeurs, events
+
+### Fonctionnalités avancées
+- Génériques
+- LINQ et expressions lambda
+- Async/await et Task
+- Records et pattern matching
+- Nullable reference types
+
+### Développement d'applications
+- ASP.NET Core (Web APIs, MVC)
+- Entity Framework Core
+- Dependency Injection
+- Configuration et logging
+
+### Qualité et tests
+- Tests unitaires (xUnit, NUnit)
+- Mocking (Moq)
+- Debugging et profiling
+- Best practices
+
+## 🔧 Outils recommandés
+
+- **IDE** : Visual Studio 2022, VS Code avec C# extension, JetBrains Rider
+- **Extensions VS Code** : C# Dev Kit, .NET Core Test Explorer
+- **Outils CLI** : dotnet CLI, NuGet
+- **Documentation** : Microsoft Learn, C# documentation officielle
+
+## 📝 Maintenance
+
+- Mettre à jour régulièrement avec de nouveaux concepts appris
+- Annoter les exemples avec des commentaires explicatifs
+- Documenter les ressources utiles découvertes
+- Pratiquer régulièrement avec de nouveaux exercices
+
+## 🤝 Assistance IA
+
+Ce dépôt est configuré pour une assistance optimale avec GitHub Copilot et Claude Code.
+Consultez `.claude/CLAUDE.md` pour le contexte complet du projet.
+
+## 📧 Contact
+
+Pour questions ou suggestions : PtiCalin (Charlie)
 
 ## Latest Changes
 

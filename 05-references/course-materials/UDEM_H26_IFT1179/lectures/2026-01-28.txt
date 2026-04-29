@@ -1,0 +1,88 @@
+===================================
+Table of Contents
+===================================
+
+Main(string[] args)
+0:09
+final
+1:45
+globale = (tp1 + tp2 + tp3) * .4 + intra * .2 + final
+2:24
+static void Main(string[] args)
+3:09
+Console.Write("Entrez la note de "+ msg return
+3:36
+string nom, prenom; double intra, final, tpl, double…
+5:12
+//Demander, aisir et convertir les differentes //notes de…
+5:24
+public static string SaisirNom(string msg)
+5:39
+using System; using using using System.Text; using…
+6:21
+lettre = "D"; else if (globale < 57)
+8:33
+double moyPond; moyPond = final return moyPond >. SEUIL;…
+8:39
+public static boot SeuilAtteint(double intra, double final)
+11:24
+lettre = "F"; else if (globale < 50) lettre = "E"; else if…
+11:30
+//notes de
+13:36
+if CSeuilAtteintCintra, final)) globale = Ctpl + tp2 + tp3)…
+14:36
+internal class Notes
+15:15
+using System; using System.Collections.Generic; using…
+15:33
+//Demander et saisir l'identification de l'etudiant prenom
+16:15
+string resultat, Lettre;
+17:36
+else if (globale lettre else if (globale < 85) lettre =…
+17:51
+intra final
+19:54
+return lettre;
+23:00
+else if (globale < 70)
+23:06
+else i-F (globale < 73) lettre = "B-"; goae<
+23:15
+lettre else if (globale < 73) lettre else if (globale < 77)…
+24:30
+private const double P0IDS_FINAL = 0.4; private const double…
+25:45
+public static string EnLettre(double globate)
+37:00
+public static string EnLettre(
+38:15
+else if (globale < 60) lettre = "C-"; else if (globale < 65)…
+38:39
+double moyPond; moyPond = final * POIDS_FINAL + intra *…
+38:45
+case string s: lettre = s; break; case double i when i <= 0:…
+42:36
+string lettre;
+43:54
+case double i when i < 53: lettre = "D"; break; case double…
+46:45
+lettre = "C+"; break; case double i when i < 73: lettre =…
+47:00
+break; case double
+50:36
+globale = Ctpl + tp2 + tp3) * POIDS_TP + intra * POIDS_INTRA…
+50:45
+intra = SaisirNote("intra"); final
+51:09
+globale = 49;
+51:54
+Le = 49;
+53:42
+rray() [0]
+57:42
+nom, globale lettre);_
+57:51
+Ce qui correspond
+59:03

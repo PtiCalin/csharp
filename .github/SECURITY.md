@@ -1,25 +1,31 @@
 # Security Policy
 
-## Supported Versions
+## About This Repository
 
-Security fixes are provided for the latest version on the `main` branch.
+This is a personal learning repository for C# and .NET.
+It contains educational code examples and exercises, not production code.
 
-## Reporting a Vulnerability
+## Code Safety
 
-If you discover a vulnerability:
+While this is a learning environment:
 
-1. Do not open a public issue.
-2. Send a private report to: [security-contact@example.com]
-3. Include reproduction steps, expected impact, and affected files.
+- All code examples follow secure coding practices
+- Security vulnerabilities in examples are documented as learning opportunities
+- No sensitive data or credentials are stored in this repository
+- Example code is not intended for production use without proper security review
 
-## Response Targets
+## Reporting Issues
 
-- Initial acknowledgment: within 3 business days
-- Triage and severity assessment: within 7 business days
-- Resolution timeline: depends on severity and complexity
+If you notice:
+- Insecure code patterns in examples
+- Accidentally committed credentials
+- Misleading security guidance
 
-## Disclosure Process
+Please open an issue at: [https://github.com/PtiCalin/csharp/issues](https://github.com/PtiCalin/csharp/issues)
 
-- We investigate and validate the report.
-- We prepare a fix and test it.
-- We publish a patch note after remediation.
+## Learning Resources
+
+For secure C# coding practices, refer to:
+- [OWASP Secure Coding Practices](https://owasp.org/www-project-secure-coding-practices-quick-reference-guide/)
+- [Microsoft Security Best Practices for .NET](https://docs.microsoft.com/en-us/dotnet/standard/security/)
+- [CWE Top 25 Most Dangerous Software Weaknesses](https://cwe.mitre.org/top25/)

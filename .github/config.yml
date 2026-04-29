@@ -1,40 +1,59 @@
 repository:
-  name: temp_school-project
-  type: school-project-template
-  language: en
+  name: csharp
+  type: learning-hub
+  language: fr
   visibility: private
 
 project:
-  context: academic
-  institution: "[Institution Name]"
-  course: "[Course Name / Code]"
+  context: personal-learning
+  subject: C# and .NET
+  focus_areas:
+    - C# language fundamentals
+    - Object-oriented programming
+    - Modern C# features
+    - LINQ and functional patterns
+    - Asynchronous programming
+    - ASP.NET Core
+    - Entity Framework Core
+    - Unit testing
   owners:
-    - "[Owner Name]"
+    - "PtiCalin (Charlie)"
   default_branch: main
+
+learning_objectives:
+  primary:
+    - Master C# syntax and conventions
+    - Understand .NET framework capabilities
+    - Build practical applications
+    - Apply design patterns and SOLID principles
+  secondary:
+    - Document personal learning journey
+    - Create reusable code examples
+    - Maintain organized knowledge base
 
 issue_management:
   blank_issues_enabled: true
   contact_links:
-    - name: Security vulnerability report
-      url: mailto:security-contact@example.com
-      about: Please report security issues privately.
+    - name: Report documentation issue
+      url: https://github.com/PtiCalin/csharp/issues/new
+      about: Report errors or suggest improvements to documentation.
   templates:
-    bug_report: .github/templates/ISSUE_TEMPLATE/bug_report.md
-    feature_request: .github/templates/ISSUE_TEMPLATE/feature_request.md
-    research_question: .github/templates/ISSUE_TEMPLATE/research_question.md
-    report_task: .github/templates/ISSUE_TEMPLATE/report_task.md
+    learning_goal: .github/templates/ISSUE_TEMPLATE/learning_goal.md
+    code_example: .github/templates/ISSUE_TEMPLATE/code_example.md
+    exercise: .github/templates/ISSUE_TEMPLATE/exercise.md
+    resource_suggestion: .github/templates/ISSUE_TEMPLATE/resource_suggestion.md
 
 pull_requests:
   template: .github/templates/PULL-REQUEST_TEMPLATE.md
   require_template_sections:
     - Summary
-    - Type of Change
-    - Validation
+    - Learning Area
+    - Changes
     - Checklist
-  minimum_reviewers: 1
+  minimum_reviewers: 0
   allow_self_review_checklist: true
   require_linked_issue: false
-  squash_merge_recommended: true
+  squash_merge_recommended: false
 
 branching:
   protected_branches:
@@ -42,12 +61,26 @@ branching:
   allow_direct_push:
     main: false
   allowed_prefixes:
-    - feature/
-    - fix/
+    - theory/
+    - example/
+    - exercise/
     - docs/
-    - chore/
-    - release/
-  naming_pattern: "<type>/<scope>-<purpose>"
+    - resource/
+  naming_pattern: "<type>/<topic>-<description>"
+
+content_organization:
+  structure:
+    theory: "01-theory/"
+    examples: "02-examples/"
+    exercises: "03-exercices/"
+    resources: "04-resources/"
+    references: "05-references/"
+
+  conventions:
+    code_style: "Microsoft C# Coding Conventions"
+    naming: "PascalCase for types, camelCase for locals"
+    language_version: "C# 10+"
+    framework_version: ".NET 6+"
   guideline: .github/versionning/BRANCHES.md
 
 commits:

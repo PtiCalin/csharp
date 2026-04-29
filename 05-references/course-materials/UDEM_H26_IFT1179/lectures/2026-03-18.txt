@@ -1,0 +1,123 @@
+=====================================
+Table of Contents - pt1
+=====================================
+Remarks
+0:30
+Array Class
+0:39
+Properties
+1:57
+Methods
+2:51
+In this article
+6:06
+Visual Studio
+6:48
+using System; using System. Collections. Generic; using…
+7:24
+static void
+7:45
+toreach Lint n in age)
+7:57
+namespace SArrayl
+10:12
+/*Methode pour afficher le contenu d'un tableau d'entier…
+11:42
+static void Afficher(int[] age, string mess)
+16:06
+Methode generate pour afficher un tableau d'entiers
+17:18
+static void Demol()
+18:18
+ers");
+19:42
+k = Array.BinarySearch(age, 37); Console.WriteLine("La…
+21:36
+{1, 20}", i, journee[i]);
+21:54
+{0}", k); lementent IComparable
+24:27
+"Vendredi", "Samedi", "Dimanche"};
+25:42
+Créer un projet
+27:00
+private char sexe;
+29:00
+public Personne(char sexe,
+29:18
+this.sexe = sexe; this.numero = numero; taille; this.poids =…
+30:03
+this.numero = numero;
+31:30
+numero == personne.numero;
+32:21
+this.sexe = sexe; this.numero = numero;
+35:03
+sexe, numero, taille, poids);
+37:15
+public int Numero get { return numero;
+38:24
+public double Poids
+39:30
+public d
+41:39
+internal class Program
+46:54
+localiser et ouvrir pour lire StreamReader aLire
+47:12
+pers[i]);
+47:33
+RechercherSequentielle(pers, nbPers);
+48:48
+reponse
+49:15
+static int LireEntier(string mess)
+49:21
+double poids = nbLivres pers[n++] = new Personne(sexe,…
+50:12
+de ta lecture du fichier texte
+50:18
+int aChercher; char reponse;
+50:42
+internal class Personne
+51:45
+StreamWriter aCreer
+57:27
+mess); return
+58:36
+
+=====================================
+Table of Contents - pt2
+=====================================
+using System; using System.Collections.Generic; using…
+2:06
+this.nomPre this.sexe = sexe;
+3:39
+namespace SArray3
+3:54
+', 0, 0)
+4:12
+public Personne(string nomPre,char sexe, double taille,…
+5:45
+public int CompareTo(Personne other)
+12:33
+using System; using using using System.Linq; using…
+15:03
+ajouter une personne à la liste pers[n++] = new…
+15:30
+internal class Program
+16:51
+string nom char sexe double taille =…
+19:57
+2:D})
+20:30
+Afficher(pers, n, "apres lecture du fichier");
+22:36
+pasLa); if Cpos == -1)
+23:09
+//Tri du tableau (pas plein) utilisant CompareTo
+26:33
+//Recherche dicho utilisant CompareTo
+26:48
+premier objet plus grand ment avec l'operateur ition serait
+28:42

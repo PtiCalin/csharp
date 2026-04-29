@@ -1,0 +1,3 @@
+Based on the structure of the theory section and modules, there should be resources for each module linking back to their respective theory, examples, exercises and references.
+
+04-resources/        # Curated links, documentation, tutorials, with commentary, cheatsheets...

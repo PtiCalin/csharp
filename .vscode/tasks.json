@@ -1,0 +1,228 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    // ============================================================================
+    // .NET BUILD TASKS
+    // ============================================================================
+    {
+      "label": "build",
+      "command": "dotnet",
+      "type": "process",
+      "args": [
+        "build",
+        "${workspaceFolder}",
+        "/property:GenerateFullPaths=true",
+        "/consoleloggerparameters:NoSummary"
+      ],
+      "problemMatcher": "$msCompile",
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
+    },
+    {
+      "label": "build-current",
+      "command": "dotnet",
+      "type": "process",
+      "args": [
+        "build",
+        "${fileDirname}",
+        "/property:GenerateFullPaths=true",
+        "/consoleloggerparameters:NoSummary"
+      ],
+      "problemMatcher": "$msCompile"
+    },
+    {
+      "label": "clean",
+      "command": "dotnet",
+      "type": "process",
+      "args": ["clean", "${workspaceFolder}"],
+      "problemMatcher": "$msCompile"
+    },
+    {
+      "label": "rebuild",
+      "command": "dotnet",
+      "type": "process",
+      "args": [
+        "build",
+        "${workspaceFolder}",
+        "--no-incremental",
+        "/property:GenerateFullPaths=true"
+      ],
+      "problemMatcher": "$msCompile",
+      "dependsOn": "clean"
+    },
+
+    // ============================================================================
+    // .NET RUN TASKS
+    // ============================================================================
+    {
+      "label": "run-current",
+      "command": "dotnet",
+      "type": "process",
+      "args": ["run", "--project", "${fileDirname}"],
+      "problemMatcher": "$msCompile",
+      "group": {
+        "kind": "test",
+        "isDefault": false
+      }
+    },
+
+    // ============================================================================
+    // .NET TEST TASKS
+    // ============================================================================
+    {
+      "label": "test",
+      "command": "dotnet",
+      "type": "process",
+      "args": [
+        "test",
+        "${workspaceFolder}",
+        "--logger:console;verbosity=detailed"
+      ],
+      "problemMatcher": "$msCompile",
+      "group": {
+        "kind": "test",
+        "isDefault": true
+      }
+    },
+    {
+      "label": "test-with-coverage",
+      "command": "dotnet",
+      "type": "process",
+      "args": [
+        "test",
+        "${workspaceFolder}",
+        "--collect:XPlat Code Coverage",
+        "--logger:console;verbosity=detailed"
+      ],
+      "problemMatcher": "$msCompile"
+    },
+
+    // ============================================================================
+    // .NET PROJECT CREATION TASKS
+    // ============================================================================
+    {
+      "label": "new-console-example",
+      "command": "dotnet",
+      "type": "shell",
+      "args": [
+        "new",
+        "console",
+        "-n",
+        "${input:newProjectName}",
+        "-o",
+        "02-examples/console-apps/${input:newProjectName}"
+      ],
+      "problemMatcher": []
+    },
+    {
+      "label": "new-exercise-beginner",
+      "command": "dotnet",
+      "type": "shell",
+      "args": [
+        "new",
+        "console",
+        "-n",
+        "${input:newExerciseName}",
+        "-o",
+        "03-exercices/beginner/${input:newExerciseName}"
+      ],
+      "problemMatcher": []
+    },
+    {
+      "label": "new-xunit-test",
+      "command": "dotnet",
+      "type": "shell",
+      "args": [
+        "new",
+        "xunit",
+        "-n",
+        "${input:newTestProjectName}",
+        "-o",
+        "02-examples/tests/${input:newTestProjectName}"
+      ],
+      "problemMatcher": []
+    },
+
+    // ============================================================================
+    // DOCUMENTATION TASKS
+    // ============================================================================
+    {
+      "label": "Markdown: Lint docs",
+      "type": "shell",
+      "command": "npx",
+      "args": [
+        "markdownlint-cli",
+        "**/*.md",
+        "--ignore",
+        "**/node_modules/**",
+        "--ignore",
+        "**/bin/**",
+        "--ignore",
+        "**/obj/**"
+      ],
+      "problemMatcher": []
+    },
+
+    // ============================================================================
+    // UTILITY TASKS
+    // ============================================================================
+    {
+      "label": "restore",
+      "command": "dotnet",
+      "type": "process",
+      "args": ["restore", "${workspaceFolder}"],
+      "problemMatcher": []
+    },
+    {
+      "label": "format",
+      "command": "dotnet",
+      "type": "process",
+      "args": ["format", "${workspaceFolder}"],
+      "problemMatcher": []
+    },
+    {
+      "label": "list-projects",
+      "type": "shell",
+      "command": "powershell",
+      "args": [
+        "-NoProfile",
+        "-Command",
+        "Get-ChildItem -Recurse -Filter *.csproj | Select-Object FullName, Directory | Format-Table -AutoSize"
+      ],
+      "problemMatcher": []
+    },
+    {
+      "label": "clean-all-binobj",
+      "type": "shell",
+      "command": "powershell",
+      "args": [
+        "-NoProfile",
+        "-Command",
+        "Get-ChildItem -Path . -Include bin,obj -Recurse -Force | Remove-Item -Recurse -Force -Verbose"
+      ],
+      "problemMatcher": []
+    }
+  ],
+  "inputs": [
+    {
+      "id": "newProjectName",
+      "type": "promptString",
+      "description": "Enter the new project name",
+      "default": "MyNewProject"
+    },
+    {
+      "id": "newExerciseName",
+      "type": "promptString",
+      "description": "Enter the new exercise name",
+      "default": "Exercise01"
+    },
+    {
+      "id": "newTestProjectName",
+      "type": "promptString",
+      "description": "Enter the test project name",
+      "default": "MyProject.Tests"
+    }
+  ]
+}

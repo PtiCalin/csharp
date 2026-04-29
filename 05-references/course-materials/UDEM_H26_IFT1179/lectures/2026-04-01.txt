@@ -1,0 +1,108 @@
+==================================
+Table of Contents
+==================================
+
+using System; using using System.Linq; using System.Text;…
+0:09
+StudiuM
+1:00
+using System; using System.Collections.Generic; using using…
+5:36
+ArrayList
+8:39
+using System.Linq; using System.Text; using System.…
+10:03
+internal class Station
+15:36
+private string ligne;
+18:51
+private string
+19:18
+using System.Text; using System.Threading.Tasks;
+20:51
+char[] separateurs
+21:18
+public override boot Equals(object obj)
+24:51
+return obj is Station station nom == station.nom;
+27:00
+get { return nom; set { nom
+27:48
+In this article
+31:42
+In this art
+31:51
+set { nom
+35:00
+static void Main(string[] args)
+43:00
+ArrayList stat = new LireRemplir(stat, "metroLigne.txt");
+50:06
+static void LireRemplirCArrayList stat, string nomFichier)
+50:12
+ArrayList stat = new
+51:15
+stat.Add(new Station(ligneLue));
+51:36
+public boot EstSurLigne(string chaîne)
+52:33
+stat.Add(new
+52:39
+Console.WriteLine(n + " elements lus");
+53:48
+elements lus");
+54:33
+using System.Threading.Tasks;
+57:06
+using
+57:18
+Musing using using System.Text; using…
+57:48
+static void
+57:57
+a reer = is mer. rea e e,
+1:01:09
+ArrayList stat = new LireRemplir(stat,
+1:01:36
+rang, freq, ligne);
+1:02:00
+using using using
+1:03:48
+namespace ListeMetro
+1:08:42
+est deja dans la liste");
+1:09:45
+ListeMetro
+1:11:51
+nom == station.nom;
+1:12:48
+Station nouv;
+1:15:21
+internal class Program
+1:16:03
+stat.
+1:18:00
+FichierEnLigne(sta
+1:18:18
+using System;
+1:20:15
+static void FichierEnLigne(List<Station> stat, string…
+1:21:21
+Démarrer - 7
+1:22:12
+return
+1:23:21
+Filelnfo fichier = new StreamWriter aCreer
+1:25:36
+class OrdreAlt
+1:27:21
+OrdreAlt parLigne = new
+1:29:24
+ste");
+1:30:18
+nouv = new Station("CARTIER", stat.Count + 1, 0, "2");
+1:31:45
+if (indice < 0)
+1:33:51
+aCreer.WriteLine(s);
+1:38:18

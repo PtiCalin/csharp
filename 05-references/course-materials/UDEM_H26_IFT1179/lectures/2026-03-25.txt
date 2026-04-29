@@ -1,0 +1,95 @@
+===================================
+Table of Contents
+===================================
+using System; using System.Collections.Generic; using…
+0:12
+if(o is PersonneIp)
+0:30
+is Personne p)
+2:57
+this.sexe = sexe;
+3:18
+public
+3:45
+public double Taille
+4:21
+using System. Collections; using using using using…
+4:33
+Console.WriteLine("Le tableau {0} :", mess);
+4:45
+namespace SArray3
+4:51
+string nom char sexe double taille =…
+7:57
+static void Afficher(ArrayList pers,
+10:30
+static void Afficher(ArrayList pers, string mess)
+10:36
+mess);
+11:39
+for(int i=0; i<pers.Count; i++)
+12:12
+static void Main(string[] args)
+13:45
+if (pos == -1)
+14:33
+//Recherche sequentielle avec IndexOf (utilise Equals)
+15:00
+OArrayList
+16:18
+0.02;
+18:57
+efficher(pers, "apres lecture du fichier");
+20:09
+//Recherche dicho utilisant CompareTo
+20:21
+{0} : {1}",
+22:45
+{0} : {1}", pos,
+22:54
+//Tri du tableau (pas plein) utilisant CompareTo
+24:21
+deux du premier objet plus grand
+25:03
+Afficher(pers, "Apres le tri");
+33:18
+Console.WriteLine("Eric Fillion n'est pas dans tableau");
+33:27
+private double taille, poids;
+34:51
+Console.WriteLine("index = {0} : {1}", pos,
+35:54
+index = {0} : {1}", pos,
+37:45
+pos = pers.IndexOf( pasLa); if (pos == -1)
+38:48
+static void Inserer(ArrayList liste, string nom, char sexe,…
+39:00
+return liste
+39:39
+//Si pas present, l'entier retourner est complement a deux…
+40:27
+static void SupprimerTous(ArrayList liste, String nom)
+47:15
+lis 2 *Write
+55:39
+Console.WriteLine("index = {0}
+56:15
+eLine "index = {0} : {1}",
+57:12
+aInserer);
+57:42
+int indice = 0, rang = 0;
+58:03
+ercher))
+58:15
+Inserer(pers, "Tremblay Pierre", 'M', 1.66, 76.5);…
+58:51
+string ligneLue = null;
+1:00:51
+st, StudiuM
+1:01:45
+using System.Linq; using System.Text; using…
+1:01:57
+"Apres Le tri");
+1:05:45

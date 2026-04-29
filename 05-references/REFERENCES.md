@@ -1,0 +1,3 @@
+Based on the structure of the theory section and modules, there should be references covering for each module linking back to their respective theory, examples, exercises and resources.
+
+05-references/       # Official docs, Microsoft Learn, technical standards, literature, textbooks...

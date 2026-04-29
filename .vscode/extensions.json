@@ -1,0 +1,32 @@
+{
+  "recommendations": [
+    // C# and .NET Core
+    "ms-dotnettools.csdevkit",
+    "ms-dotnettools.csharp",
+    "ms-dotnettools.vscode-dotnet-runtime",
+    "ms-dotnettools.vscodeintellicode-csharp",
+
+    // Testing
+    "formulahendry.dotnet-test-explorer",
+
+    // Documentation and Markdown
+    "yzhang.markdown-all-in-one",
+    "davidanson.vscode-markdownlint",
+
+    // Code Quality
+    "streetsidesoftware.code-spell-checker",
+    "usernamehw.errorlens",
+    "oderwat.indent-rainbow",
+    "christian-kohler.path-intellisense",
+
+    // Productivity
+    "visualstudioexptteam.vscodeintellicode",
+    "github.copilot",
+    "github.copilot-chat",
+
+    // Additional useful extensions
+    "eamodio.gitlens",
+    "gruntfuggly.todo-tree"
+  ],
+  "unwantedRecommendations": ["ms-vscode.vscode-typescript-next"]
+}

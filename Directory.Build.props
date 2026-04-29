@@ -1,0 +1,72 @@
+<Project>
+  <!--
+    Directory.Build.props
+    =====================
+    Ce fichier définit des propriétés communes à tous les projets C# dans ce dépôt.
+    Il est automatiquement importé par tous les fichiers .csproj.
+
+    Documentation: https://docs.microsoft.com/en-us/visualstudio/msbuild/customize-your-build
+  -->
+
+  <PropertyGroup>
+    <!-- Version du langage C# -->
+    <LangVersion>10.0</LangVersion>
+
+    <!-- Activer les nullable reference types -->
+    <Nullable>enable</Nullable>
+
+    <!-- Traiter les warnings comme des erreurs -->
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+
+    <!-- Générer la documentation XML -->
+    <GenerateDocumentationFile>false</GenerateDocumentationFile>
+
+    <!-- Encoding par défaut -->
+    <Encoding>UTF-8</Encoding>
+
+    <!-- Activer les analyseurs -->
+    <EnableNETAnalyzers>true</EnableNETAnalyzers>
+    <AnalysisMode>Default</AnalysisMode>
+    <AnalysisLevel>latest</AnalysisLevel>
+
+    <!-- Implicit usings (C# 10+) -->
+    <ImplicitUsings>disable</ImplicitUsings>
+
+    <!-- Informations du projet -->
+    <Authors>PtiCalin (Charlie)</Authors>
+    <Company>Personal Learning</Company>
+    <Copyright>Copyright © 2026 PtiCalin</Copyright>
+    <PackageProjectUrl>https://github.com/PtiCalin/csharp</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/PtiCalin/csharp</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+  </PropertyGroup>
+
+  <!-- Configuration spécifique aux projets de test -->
+  <PropertyGroup Condition="'$(IsTestProject)' == 'true' OR $(MSBuildProjectName.EndsWith('.Tests'))">
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <!-- Packages NuGet communs pour tous les projets -->
+  <ItemGroup>
+    <!-- Analyseurs de code -->
+    <PackageReference Include="Microsoft.CodeAnalysis.NetAnalyzers" Version="7.0.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <!-- Packages spécifiques aux projets de test -->
+  <ItemGroup Condition="'$(IsTestProject)' == 'true' OR $(MSBuildProjectName.EndsWith('.Tests'))">
+    <PackageReference Include="xunit" Version="2.4.2" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.4.5">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.5.0" />
+    <PackageReference Include="coverlet.collector" Version="3.2.0">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+  </ItemGroup>
+
+</Project>

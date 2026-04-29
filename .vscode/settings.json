@@ -1,0 +1,182 @@
+{
+  // ============================================================================
+  // GENERAL EDITOR SETTINGS
+  // ============================================================================
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": true,
+  "editor.renderWhitespace": "selection",
+  "editor.rulers": [80, 120],
+  "editor.tabSize": 4,
+  "editor.insertSpaces": true,
+  "editor.detectIndentation": false,
+  "editor.minimap.enabled": true,
+  "editor.minimap.renderCharacters": false,
+  "editor.bracketPairColorization.enabled": true,
+  "editor.guides.bracketPairs": "active",
+  "editor.inlineSuggest.enabled": true,
+  "editor.suggestSelection": "first",
+  "editor.wordBasedSuggestions": "off",
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": "explicit",
+    "source.fixAll": "explicit"
+  },
+
+  // ============================================================================
+  // FILES
+  // ============================================================================
+  "files.trimTrailingWhitespace": true,
+  "files.insertFinalNewline": true,
+  "files.encoding": "utf8",
+  "files.eol": "\n",
+  "files.exclude": {
+    "**/.git": true,
+    "**/.DS_Store": true,
+    "**/bin": true,
+    "**/obj": true,
+    "**/.vs": true
+  },
+  "search.exclude": {
+    "**/.git": true,
+    "**/.DS_Store": true,
+    "**/node_modules": true,
+    "**/bin": true,
+    "**/obj": true,
+    "**/.vs": true
+  },
+  "files.watcherExclude": {
+    "**/bin/**": true,
+    "**/obj/**": true,
+    "**/.git/objects/**": true,
+    "**/.git/subtree-cache/**": true,
+    "**/node_modules/**": true
+  },
+
+  // ============================================================================
+  // C# and .NET SETTINGS
+  // ============================================================================
+  "[csharp]": {
+    "editor.defaultFormatter": "ms-dotnettools.csharp",
+    "editor.formatOnSave": true,
+    "editor.tabSize": 4,
+    "editor.insertSpaces": true,
+    "editor.rulers": [120],
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": "explicit",
+      "source.fixAll": "explicit"
+    }
+  },
+
+  // C# specific settings
+  "csharp.suppressDotnetRestoreNotification": false,
+  "csharp.semanticHighlighting.enabled": true,
+  "csharp.suppressBuildAssetsNotification": false,
+  "dotnet.defaultSolution": "disable",
+
+  // IntelliSense
+  "omnisharp.enableEditorConfigSupport": true,
+  "omnisharp.enableRoslynAnalyzers": true,
+
+  // .NET Test Explorer
+  "dotnet-test-explorer.testProjectPath": "**/*Tests.csproj",
+  "dotnet-test-explorer.showCodeLens": true,
+  "dotnet-test-explorer.codeLensFailed": "Run failed tests",
+  "dotnet-test-explorer.codeLensPassed": "Run passed tests",
+
+  // ============================================================================
+  // MARKDOWN SETTINGS
+  // ============================================================================
+  "[markdown]": {
+    "editor.wordWrap": "on",
+    "editor.quickSuggestions": {
+      "comments": "off",
+      "strings": "off",
+      "other": "off"
+    },
+    "editor.defaultFormatter": "yzhang.markdown-all-in-one"
+  },
+  "markdownlint.config": {
+    "MD013": {
+      "line_length": 120,
+      "code_blocks": false,
+      "tables": false
+    },
+    "MD033": false,
+    "MD041": false
+  },
+
+  // ============================================================================
+  // SPELL CHECKER
+  // ============================================================================
+  "cSpell.language": "en,fr",
+  "cSpell.words": [
+    "async",
+    "await",
+    "LINQ",
+    "csproj",
+    "dotnet",
+    "namespace",
+    "readonly",
+    "nullable",
+    "IEnumerable",
+    "ICollection",
+    "deserialize",
+    "serialize",
+    "appsettings",
+    "middleware",
+    "refactoring",
+    "polymorphism",
+    "encapsulation",
+    "PtiCalin"
+  ],
+
+  // ============================================================================
+  // ERROR LENS
+  // ============================================================================
+  "errorLens.enabled": true,
+  "errorLens.enabledDiagnosticLevels": ["error", "warning", "info"],
+  "errorLens.messageTemplate": "$message",
+
+  // ============================================================================
+  // TODO TREE
+  // ============================================================================
+  "todo-tree.general.tags": [
+    "TODO",
+    "FIXME",
+    "HACK",
+    "LEARN",
+    "EXERCISE",
+    "NOTE"
+  ],
+  "todo-tree.highlights.customHighlight": {
+    "TODO": {
+      "icon": "check",
+      "iconColour": "#FFD700"
+    },
+    "LEARN": {
+      "icon": "book",
+      "iconColour": "#00BFFF"
+    },
+    "EXERCISE": {
+      "icon": "rocket",
+      "iconColour": "#32CD32"
+    }
+  },
+
+  // ============================================================================
+  // WORKBENCH
+  // ============================================================================
+  "workbench.editor.labelFormat": "short",
+  "workbench.tree.renderIndentGuides": "always",
+  "workbench.colorCustomizations": {
+    "editorRuler.foreground": "#404040"
+  },
+
+  // ============================================================================
+  // TERMINAL
+  // ============================================================================
+  "terminal.integrated.defaultProfile.windows": "PowerShell",
+  "terminal.integrated.fontSize": 14,
+  "terminal.integrated.cursorStyle": "line",
+  "dotnet.completion.showCompletionItemsFromUnimportedNamespaces": true,
+  "dotnet.formatting.organizeImportsOnFormat": true
+}

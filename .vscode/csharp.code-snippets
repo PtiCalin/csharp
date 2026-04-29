@@ -1,0 +1,362 @@
+{
+  // ============================================================================
+  // BASIC C# SNIPPETS
+  // ============================================================================
+  "Main Method": {
+    "prefix": "main",
+    "body": ["static void Main(string[] args)", "{", "    $0", "}"],
+    "description": "Main method",
+  },
+  "Console WriteLine": {
+    "prefix": "cw",
+    "body": ["Console.WriteLine($1);"],
+    "description": "Console.WriteLine shortcut",
+  },
+  "Console ReadLine": {
+    "prefix": "cr",
+    "body": ["Console.ReadLine();"],
+    "description": "Console.ReadLine shortcut",
+  },
+
+  // ============================================================================
+  // CLASS STRUCTURES
+  // ============================================================================
+  "Class with Constructor": {
+    "prefix": "class-ctor",
+    "body": [
+      "public class ${1:ClassName}",
+      "{",
+      "    public ${1:ClassName}()",
+      "    {",
+      "        $0",
+      "    }",
+      "}",
+    ],
+    "description": "Class with constructor",
+  },
+  "Property (auto-implemented)": {
+    "prefix": "prop",
+    "body": ["public ${1:int} ${2:PropertyName} { get; set; }"],
+    "description": "Auto-implemented property",
+  },
+  "Property (read-only)": {
+    "prefix": "propro",
+    "body": ["public ${1:int} ${2:PropertyName} { get; }"],
+    "description": "Read-only property",
+  },
+  "Property (full)": {
+    "prefix": "propfull",
+    "body": [
+      "private ${1:int} _${2:propertyName};",
+      "public ${1:int} ${3:PropertyName}",
+      "{",
+      "    get { return _${2:propertyName}; }",
+      "    set { _${2:propertyName} = value; }",
+      "}",
+    ],
+    "description": "Full property with backing field",
+  },
+
+  // ============================================================================
+  // METHODS
+  // ============================================================================
+  "Method": {
+    "prefix": "method",
+    "body": [
+      "${1|public,private,protected,internal|} ${2:void} ${3:MethodName}(${4})",
+      "{",
+      "    $0",
+      "}",
+    ],
+    "description": "Method declaration",
+  },
+  "Async Method": {
+    "prefix": "method-async",
+    "body": [
+      "${1|public,private,protected,internal|} async Task${2:<${3:T}>} ${4:MethodName}(${5})",
+      "{",
+      "    $0",
+      "}",
+    ],
+    "description": "Async method",
+  },
+
+  // ============================================================================
+  // CONTROL FLOW
+  // ============================================================================
+  "If-Else": {
+    "prefix": "ifelse",
+    "body": [
+      "if (${1:condition})",
+      "{",
+      "    $2",
+      "}",
+      "else",
+      "{",
+      "    $0",
+      "}",
+    ],
+    "description": "If-else statement",
+  },
+  "For Loop": {
+    "prefix": "for",
+    "body": [
+      "for (int ${1:i} = 0; ${1:i} < ${2:length}; ${1:i}++)",
+      "{",
+      "    $0",
+      "}",
+    ],
+    "description": "For loop",
+  },
+  "Foreach Loop": {
+    "prefix": "foreach",
+    "body": [
+      "foreach (${1:var} ${2:item} in ${3:collection})",
+      "{",
+      "    $0",
+      "}",
+    ],
+    "description": "Foreach loop",
+  },
+  "Try-Catch": {
+    "prefix": "try",
+    "body": [
+      "try",
+      "{",
+      "    $1",
+      "}",
+      "catch (${2:Exception} ${3:ex})",
+      "{",
+      "    $0",
+      "}",
+    ],
+    "description": "Try-catch block",
+  },
+  "Try-Catch-Finally": {
+    "prefix": "tryf",
+    "body": [
+      "try",
+      "{",
+      "    $1",
+      "}",
+      "catch (${2:Exception} ${3:ex})",
+      "{",
+      "    $4",
+      "}",
+      "finally",
+      "{",
+      "    $0",
+      "}",
+    ],
+    "description": "Try-catch-finally block",
+  },
+  "Switch Expression (C# 8+)": {
+    "prefix": "switch-expr",
+    "body": [
+      "${1:var} ${2:result} = ${3:value} switch",
+      "{",
+      "    ${4:pattern1} => ${5:result1},",
+      "    ${6:pattern2} => ${7:result2},",
+      "    _ => ${8:defaultResult}",
+      "};",
+    ],
+    "description": "Switch expression (C# 8.0+)",
+  },
+
+  // ============================================================================
+  // LINQ
+  // ============================================================================
+  "LINQ Where": {
+    "prefix": "linq-where",
+    "body": ["${1:collection}.Where(${2:x} => ${3:x.Property == value})"],
+    "description": "LINQ Where clause",
+  },
+  "LINQ Select": {
+    "prefix": "linq-select",
+    "body": ["${1:collection}.Select(${2:x} => ${3:x.Property})"],
+    "description": "LINQ Select projection",
+  },
+  "LINQ Query": {
+    "prefix": "linq-query",
+    "body": [
+      "var ${1:result} = from ${2:item} in ${3:collection}",
+      "                  where ${4:condition}",
+      "                  select ${5:item};",
+    ],
+    "description": "LINQ query syntax",
+  },
+
+  // ============================================================================
+  // ASYNC/AWAIT
+  // ============================================================================
+  "Async Task": {
+    "prefix": "async-task",
+    "body": [
+      "public async Task ${1:MethodName}()",
+      "{",
+      "    await ${2:Task.Delay(1000)};",
+      "    $0",
+      "}",
+    ],
+    "description": "Async Task method",
+  },
+  "Async Task<T>": {
+    "prefix": "async-task-t",
+    "body": [
+      "public async Task<${1:T}> ${2:MethodName}()",
+      "{",
+      "    ${1:T} result = await ${3:GetResultAsync()};",
+      "    return result;",
+      "}",
+    ],
+    "description": "Async Task<T> method",
+  },
+
+  // ============================================================================
+  // INTERFACES & ABSTRACTS
+  // ============================================================================
+  "Interface": {
+    "prefix": "interface",
+    "body": [
+      "public interface I${1:InterfaceName}",
+      "{",
+      "    ${2:void MethodName();}",
+      "    $0",
+      "}",
+    ],
+    "description": "Interface definition",
+  },
+  "Abstract Class": {
+    "prefix": "abstract",
+    "body": [
+      "public abstract class ${1:ClassName}",
+      "{",
+      "    public abstract ${2:void} ${3:MethodName}();",
+      "    $0",
+      "}",
+    ],
+    "description": "Abstract class",
+  },
+
+  // ============================================================================
+  // UNIT TESTS
+  // ============================================================================
+  "xUnit Test Method": {
+    "prefix": "test-xunit",
+    "body": [
+      "[Fact]",
+      "public void ${1:TestMethodName}()",
+      "{",
+      "    // Arrange",
+      "    ${2:var expected = true;}",
+      "    ",
+      "    // Act",
+      "    ${3:var actual = MethodUnderTest();}",
+      "    ",
+      "    // Assert",
+      "    Assert.${4|Equal,True,False,NotNull,Null|}(${5:expected, actual});",
+      "}",
+    ],
+    "description": "xUnit test method with AAA pattern",
+  },
+  "xUnit Theory Test": {
+    "prefix": "test-theory",
+    "body": [
+      "[Theory]",
+      "[InlineData(${1:value1})]",
+      "[InlineData(${2:value2})]",
+      "public void ${3:TestMethodName}(${4:int input})",
+      "{",
+      "    // Arrange",
+      "    $5",
+      "    ",
+      "    // Act",
+      "    $6",
+      "    ",
+      "    // Assert",
+      "    Assert.${7|Equal,True,False,NotNull|}($8);",
+      "}",
+    ],
+    "description": "xUnit theory test with inline data",
+  },
+
+  // ============================================================================
+  // MODERN C# FEATURES
+  // ============================================================================
+  "Record": {
+    "prefix": "record",
+    "body": ["public record ${1:RecordName}(${2:int Id}, ${3:string Name});"],
+    "description": "Record type (C# 9+)",
+  },
+  "Record Class": {
+    "prefix": "record-class",
+    "body": [
+      "public record ${1:RecordName}",
+      "{",
+      "    public ${2:int} ${3:Id} { get; init; }",
+      "    public ${4:string} ${5:Name} { get; init; }",
+      "    $0",
+      "}",
+    ],
+    "description": "Record class with properties",
+  },
+  "Pattern Matching": {
+    "prefix": "pattern-match",
+    "body": ["if (${1:obj} is ${2:Type} ${3:variable})", "{", "    $0", "}"],
+    "description": "Pattern matching with is",
+  },
+  "Nullable Reference": {
+    "prefix": "nullable",
+    "body": ["${1:string}? ${2:variableName} = ${3:null};"],
+    "description": "Nullable reference type",
+  },
+
+  // ============================================================================
+  // COLLECTIONS
+  // ============================================================================
+  "List Initialization": {
+    "prefix": "list-init",
+    "body": [
+      "var ${1:listName} = new List<${2:int}>",
+      "{",
+      "    ${3:1, 2, 3}",
+      "};",
+    ],
+    "description": "List with collection initializer",
+  },
+  "Dictionary Initialization": {
+    "prefix": "dict-init",
+    "body": [
+      "var ${1:dictName} = new Dictionary<${2:string}, ${3:int}>",
+      "{",
+      "    { \"${4:key1}\", ${5:1} },",
+      "    { \"${6:key2}\", ${7:2} }",
+      "};",
+    ],
+    "description": "Dictionary with collection initializer",
+  },
+
+  // ============================================================================
+  // LEARNING MARKERS
+  // ============================================================================
+  "TODO Learning": {
+    "prefix": "todo-learn",
+    "body": ["// TODO: LEARN - ${1:Description of what to learn}", "$0"],
+    "description": "TODO marker for learning points",
+  },
+  "Exercise Marker": {
+    "prefix": "todo-exercise",
+    "body": [
+      "// EXERCISE: ${1:Description of exercise}",
+      "// Difficulty: ${2|Beginner,Intermediate,Advanced|}",
+      "// Topics: ${3:OOP, LINQ, Async, etc.}",
+      "$0",
+    ],
+    "description": "Exercise marker for practice",
+  },
+  "Note Marker": {
+    "prefix": "note",
+    "body": ["// NOTE: ${1:Important concept or observation}", "$0"],
+    "description": "Note marker for important concepts",
+  },
+}

@@ -1,0 +1,70 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": ".NET Core Launch (console)",
+      "type": "coreclr",
+      "request": "launch",
+      "preLaunchTask": "build",
+      "program": "${workspaceFolder}/02-examples/${input:exampleFolder}/bin/Debug/net6.0/${input:exampleName}.dll",
+      "args": [],
+      "cwd": "${workspaceFolder}/02-examples/${input:exampleFolder}",
+      "console": "internalConsole",
+      "stopAtEntry": false,
+      "internalConsoleOptions": "openOnSessionStart"
+    },
+    {
+      "name": ".NET Core Launch (exercise)",
+      "type": "coreclr",
+      "request": "launch",
+      "preLaunchTask": "build",
+      "program": "${workspaceFolder}/03-exercices/${input:exerciseLevel}/${input:exerciseName}/bin/Debug/net6.0/${input:exerciseName}.dll",
+      "args": [],
+      "cwd": "${workspaceFolder}/03-exercices/${input:exerciseLevel}/${input:exerciseName}",
+      "console": "internalConsole",
+      "stopAtEntry": false
+    },
+    {
+      "name": ".NET Core Attach",
+      "type": "coreclr",
+      "request": "attach"
+    },
+    {
+      "name": "Debug Current File",
+      "type": "coreclr",
+      "request": "launch",
+      "preLaunchTask": "build-current",
+      "program": "${workspaceFolder}/bin/Debug/net6.0/${fileBasenameNoExtension}.dll",
+      "args": [],
+      "cwd": "${fileDirname}",
+      "console": "internalConsole",
+      "stopAtEntry": false
+    }
+  ],
+  "inputs": [
+    {
+      "id": "exampleFolder",
+      "type": "promptString",
+      "description": "Enter the example folder name (e.g., console-apps, design-patterns)",
+      "default": "console-apps"
+    },
+    {
+      "id": "exampleName",
+      "type": "promptString",
+      "description": "Enter the example project name",
+      "default": "HelloWorld"
+    },
+    {
+      "id": "exerciseLevel",
+      "type": "pickString",
+      "description": "Select exercise difficulty level",
+      "options": ["beginner", "intermediate", "advanced"],
+      "default": "beginner"
+    },
+    {
+      "id": "exerciseName",
+      "type": "promptString",
+      "description": "Enter the exercise project name"
+    }
+  ]
+}

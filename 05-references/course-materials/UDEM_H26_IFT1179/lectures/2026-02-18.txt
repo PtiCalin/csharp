@@ -1,0 +1,98 @@
+===================================
+Table of Contents
+===================================
+
+class Etudiant,
+0:03
+public void Afficher(string msg)
+0:15
+return obj is Etudiant etudiant codePerm ==…
+1:00
+st 123 Console.WriteLine("Nom et prenom
+4:33
+st 123 public override string
+7:09
+etud2 = new Etudiant("Choquette Alain", etud3 = new…
+7:27
+internal class Program
+7:36
+99.5),
+8:30
+0 n > Accueil
+9:03
+Tremblay Sylvie Choquette Alain Lafleur Lise Lu Jay Terrieur…
+9:39
+using System; using using using System. using System.Text;…
+11:57
+int nbEtudiant = 0; tabEtudiant[nbEtudiant++] = etudl;
+12:09
+etud2.Afficher("Infos de
+13:39
+etud3 = new EtudiantC"Lafleur Lise",
+19:33
+Etudiant[] tabEtudiant = new int nbEtudiant = 0;…
+20:51
+tabEtudiant[nbEtudiant] nbEtudiant++;
+24:42
+tabEtudiant[nbEtudiant++]
+25:06
+if (nb > 31)
+26:12
+if (autre.globale > globale) return autre;
+29:15
+foreach (Etudiant e in tabEtudiant) Console.WriteLine(e);
+29:42
+tabEtudiani
+30:36
+Choquette Alain__ Lafleur Lise Lu Jay Terrieur Alex Terrieur…
+31:51
+return this;
+33:48
+public override string ToStringC)
+34:24
+Permanent Console.WriteLine("Resultat…
+34:33
+bale());
+34:42
+public static boot operator !=(Etudiant left, Etudiant…
+34:54
+return nomPre + " " + codePerm globale
+36:15
+99.5), 610"), etud3 = new Etudiant("Lafleur Lise",
+36:33
+null)
+39:48
+Console.WriteLine("Code Permanent {0}", codePerm);
+42:06
+globale = value;
+42:24
+using System.Threading.Tasks;
+42:30
+private double globale;
+42:57
+public int
+43:21
+Console.WriteLine("Nom et prenom Console.WriteLine("Sexe…
+44:03
+nb = int.Parse return an + nb;
+44:30
+double lallote;
+47:15
+public override boot Equals(object obj)
+48:18
+StreamReader entree string uneLigne = null;
+53:00
+nouveau = new if (!tabEtudiant.Contains(nouveau))…
+53:21
+lallote = -1;
+54:03
+entree. Close();
+55:54
+boot trouve = false;
+56:18
+double
+56:54
+lEtudiant bidon = new
+57:54
+public Etudiant Meilleur(Etudiant autre)
+58:51

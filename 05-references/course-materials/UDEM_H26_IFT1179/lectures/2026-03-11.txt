@@ -1,0 +1,97 @@
+============================
+Table of Contents - pt1
+============================
+return d;
+7:57
+if (g < d)
+25:18
+while (T[d] > valPivot) d--;
+25:27
+int g = debut, d = fin; int valPivot = T[debut], tempo;
+25:39
+tempo = TLdebutJ; T[debut] = T[d]; T[d] = tempo;
+30:09
+T[debut] T[d] = tempo;
+38:18
+T[d] = tempo;
+38:48
+cette même fonction (2
+39:09
+int mini = 0; int maxi = nb - 1; int milieu; boot trouve =…
+41:27
+milieu; boot trouve
+44:27
+if (T[milieu] == aChercher) trouve = true; else if…
+45:27
+DateTime dt2 = DateTime.Now;
+45:33
+if (trouve)
+49:00
+if (trouve) return milieu;
+50:21
+using using System.Text; using System.Threading.Tasks;
+50:45
+1 nombre arbitraire entre 150000 et 151000 pour le nombre…
+52:57
+int indPivot = Partitionner(T, gauche, droite); QuickSort(T,…
+53:36
+if (droite > gauche) /* au moins 2 éléments
+54:27
+
+=====================================
+Table of Contents - pt2
+=====================================
+namespace ExempleOperateur
+2:06
+if (value > 0) rayon = value;
+3:51
+public double Surface()
+4:12
+this.rayon = rayon; nbCercles++;
+4:30
+public void Afficher(String msg)
+4:39
+public static void AfficherNbCercles()
+6:30
+static void Main(string[] args)
+7:12
+public double Rayon
+9:30
+public
+10:03
+public Cercle(double rayon)
+10:39
+public double Perimetre()
+17:21
+return 2 * Math.PI * rayon;
+19:33
+private static double CalculRayon(double aire)
+19:51
+using System.Threading.Tasks;
+23:39
+{1, 20}",
+24:03
+while C g <= d tempo = T[debut]; T[debut] = T[d]; T[d] =…
+24:12
+Cercle c4 = new
+25:54
+Console.WriteLine("Le contenu du tableau avant le tri");…
+28:09
+cercle résultant de l'addition");
+28:33
+tabRond[i].Rayon);
+29:54
+V/ Fichier Dicho.cs (recherche dichotomique dans un tableau…
+30:15
+if (droite > gauche) /* au moins 2 éléments
+30:39
+Cercle cl = new c2 = new c3 = new Cercle(), c5;
+31:33
+c5 = c2
+31:39
+QuickSort(T, indPivot + 1, droite);
+32:21
+contenu du tableau avant le tri");
+33:45
+int mini = 0, maxi = nbElem — 1, milieu = —1;
+36:30

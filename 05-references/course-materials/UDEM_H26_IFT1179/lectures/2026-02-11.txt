@@ -1,0 +1,126 @@
+===================================
+Table of Contents
+===================================
+
+Créer un projet
+0:12
+Configurer votre nouveau projet
+0:21
+using System; using System.Collections.Generic; using…
+0:42
+using System.Collections.Generic; using using System.Text;…
+2:54
+StudiuM
+5:54
+public Etudiant(string nP, string CP, double glob)
+6:00
+* Méthodes d'accès et de modification
+6:09
+private double globale;
+9:03
+class Etudiant
+10:27
+this.globale = globale;
+14:09
+this.nomPre = np;
+16:18
+public Etudiant(string np, string cp)
+16:33
+globale
+24:42
+globate = nouv;
+26:15
+e - 2 string
+29:27
+public st globate
+30:45
+public string
+31:18
+public string getSexe()
+32:00
+public int
+34:30
+int i = getRangMois() - 1;
+37:27
+int an= 1900;
+41:30
+public int getAnnee() int an= 1900;
+42:21
+et prenom
+43:06
+Console.WriteLine("Nom et prenom Console.WriteLine("Sexe…
+46:00
+return an + nb;
+52:21
+public void Afficher(string msg)
+52:36
+Console.WriteLine("Nom et prenom
+56:24
+public void setGlobale(double nouv) if (nouv < 0) globale =…
+57:12
+return int.Parse(codePerm.Substring(6,2)) t 50;
+57:24
+etud2 = new Etudiant("Choquette Alain", etud3 = new…
+57:33
+internal class Program
+58:27
+globale = 78.9;
+58:39
+Console.WriteLine("Les e", "TRES26519009", 99.5),
+59:48
+99.5),
+1:00:51
+internal internal class Program
+1:01:24
+static void Main(string[] args)
+1:04:27
+if (nouv < 0) globale = 0; else if globale = 100;
+1:05:33
+A Général
+1:06:09
+Boîte à
+1:06:27
+n des notes");
+1:06:57
+etudl.Afficher("Infos de etud2.Afficher("Infos de…
+1:07:15
+Console.WriteLine("Code Permanent…
+1:07:42
+Console.WriteLine("Les etudiants");
+1:08:00
+référence public int getJour()
+1:14:42
+etud3.Sexe sexe féminin");
+1:14:48
+if Cetud3.Sexe == "Feminin")
+1:15:27
+public string Mois
+1:17:09
+namespace ExempleEtudiant
+1:22:21
+this.codePerm = codePerm; this.globale = globale;
+1:22:36
+Console.WriteLine("Nom et prenom nomPre.ToUpperC));
+1:22:51
+return nomMois[i];
+1:23:36
+using System.Text; using System.Threading.Tasks;
+1:24:39
+public Etudiant(string codePerm) : this("", codePerm, 0)
+1:24:45
+public Etudiant(string nomPre, string codePerm, double…
+1:24:51
+public Etudiant(string np, string cp) : this(np, cp, 78.9)
+1:25:51
+public string Sexe get {return codePerm[6] >= '5' ?…
+1:26:27
+return
+1:26:33
+using System; using using System.Linq; using System.Text;…
+1:27:24
+if (nb > 31)
+1:27:45
+Console.WriteLine("Les etudiants apres augmentation des…
+1:29:36
+sexe féminin");
+1:31:09

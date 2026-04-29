@@ -1,37 +1,59 @@
 ## Summary
 
-Describe what this PR changes and why.
+Décrivez ce que ce PR ajoute ou modifie dans le hub d'apprentissage.
 
-## Type of Change
+## Learning Area
 
-- [ ] feat (new functionality)
-- [ ] fix (bug fix)
-- [ ] docs (documentation)
-- [ ] test (tests)
-- [ ] chore (maintenance)
+- [ ] Theory (01-theory/)
+- [ ] Examples (02-examples/)
+- [ ] Exercises (03-exercices/)
+- [ ] Resources (04-resources/)
+- [ ] References (05-references/)
 
-## Scope
+## C# Topic
 
-- [ ] Code
-- [ ] Documentation
-- [ ] Data / assets
-- [ ] Configuration
+- [ ] Fundamentals (types, variables, operators)
+- [ ] Object-Oriented Programming
+- [ ] Collections & Generics
+- [ ] LINQ & Functional Programming
+- [ ] Async/Await & Task
+- [ ] ASP.NET Core
+- [ ] Entity Framework Core
+- [ ] Testing
+- [ ] Design Patterns
+- [ ] Other: _____________
+
+## Changes
+
+Listez les fichiers ajoutés/modifiés et leur objectif.
+
+### Added
+
+-
+
+### Modified
+
+-
+
+### Removed
+
+-
 
 ## Validation
 
-Explain how the change was validated.
-
-- [ ] Local checks completed
-- [ ] Tests added/updated (if applicable)
-- [ ] No known regression introduced
+- [ ] Code compiles without errors (if applicable)
+- [ ] Examples tested and verified
+- [ ] Documentation is clear and accurate
+- [ ] Follows C# coding conventions
+- [ ] No sensitive information included
 
 ## Checklist
 
-- [ ] Branch follows naming rules
-- [ ] Commit messages follow template
-- [ ] Related docs updated
-- [ ] No secrets or sensitive data included
+- [ ] Branch follows naming rules (theory/, example/, exercise/, docs/, resource/)
+- [ ] Commit messages are descriptive
+- [ ] Related documentation updated (README if needed)
+- [ ] Code comments in English, docs in French (when applicable)
 
-## Linked Task / Issue
+## Notes
 
-Reference: [Issue/Task ID or URL]
+Ajoutez toute information supplémentaire pertinente.

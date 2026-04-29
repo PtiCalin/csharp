@@ -1,0 +1,192 @@
+===================================
+Table of Contents
+===================================
+
+- Programmation en C#
+0:06
+return
+0:30
+aCreer.WriteLine(s);
+1:06
+ur ligne 2");
+5:57
+static void Afficher(List<Station> stat, string message)
+6:21
+while Ci < stat.Count)
+6:27
+if (stat[i].Ligne == ligne)
+8:30
+Afficher(stat, "en ordre de lignes");
+10:45
+SupprimeUneLigne(stat, "2");
+11:03
+if (indice < 0)
+13:36
+static void SupprimeUneLigne(List<Station> stat, string…
+14:09
+//Supprimer un sous-ensemble de la List sous une condition
+14:54
+ligne);
+15:06
+//à noter, l'utilisation de l'opérateur lambda ne sera pas…
+15:12
+//Supprimer
+15:30
+foreach CStation s in stat)
+17:06
+//Syntaxe //à noter, 1 //pour //long
+17:27
+if (stat[i].Ligne == ligne) stat.RemoveAt(i);
+18:06
+Que voulez-vous faire
+18:21
+Troisième partie
+18:27
+C# : Fichiers
+18:48
+Héritage
+19:45
+StudiuM
+25:57
+* classes dérivées de Rectangle : Carre et RectangleVisible
+27:12
+public Carre(double cote)
+27:18
+Fichier Heritage.cs exemple d'héritage simple * classe de…
+27:30
+protected double longueur, largeur; public Rectangte(double…
+29:45
+public double Perimetre()
+30:21
+périe. : {2, 6:F2} I surf. : {3, 6:F2}> ", longueur,
+30:45
+public Rectangle()
+32:15
+class Carre : Rectangle
+33:06
+base cote, cote) // appel au constructeur à 2 paramètres de…
+33:36
+public double Surface()
+34:06
+class RectangleVisible : Rectangle
+34:21
+this.longueur = longueur; this.largeur = largeur;
+35:48
+public override string
+36:27
+largeur, Perimetre(), Surface());
+37:06
+class Heritage
+37:12
+new Rectangle(7.1, 2.9) double somPerim = 0.0; foreach…
+40:12
+foreach (Rectangle rec in rect)
+40:30
+RectangleVisible rvl = new RectangleVisible(6.1, 2.9,…
+41:00
+using System;
+42:06
+public abstract double Perimetre(); public abstract dciuble…
+48:24
+Surface());
+48:57
+public Cercle(double rayon)
+49:42
+this.rayon = rayon;
+49:57
+pas encore comment calculer la Surface.
+50:48
+ted double cotel, Parallelogramme(double cotel, double
+51:39
+/* Cette classe est CONCRÈTE car toutes les méthodes sont…
+53:24
+public override double PerimetreC)
+53:30
+base.ToString()
+53:42
+/* Cette classe est encore abstraite car on ne sait pas…
+54:00
+public override double Surface()
+55:54
+return cotel
+56:27
+class Abstraitel
+56:51
+namespace TestHeritage
+1:00:27
+yvan;
+1:00:57
+Employe[] payRoll = new int nbEmploye;
+1:01:12
+internal class Program
+1:01:27
+using System.Text; using System.Threading.Tasks;
+1:03:27
+//Méthode déclarée abstraite, doit être redéfinie dans…
+1:03:51
+using System; using System.Collections.Generic; using…
+1:04:00
+public Employe(string nom, string prenom, int num,
+1:04:12
+private string nom, prenom, adresse; private int num;
+1:05:21
+this.nom = nom; this.prenom = prenom; num = 0; this.adresse…
+1:06:06
+public string
+1:06:15
+public int Numero
+1:06:24
+public String Prenom
+1:06:42
+public string Adresse
+1:06:48
+set { adresse = value;}
+1:07:18
+public override boot Equals(object obj)
+1:07:42
+using System; using using using System.Text; using…
+1:07:57
+public Salarie(string nom, string prenom, int numero,string…
+1:09:24
+:base(nom, prenom, numero, adresse)
+1:11:36
+e: Le Patron\n";
+1:11:48
+//Paiement sous forme d'un chèque
+1:11:57
+//Propriété en lecture seule
+1:13:24
+public String NAS get { return nas;
+1:14:12
+private double ventesPeriode; private Superviseur chef;…
+1:17:00
+//Pour ne pas définir un champ salHebdo, ont réparti…
+1:17:18
+//Redéfinition de Salaire pour tenir compte du salaire de…
+1:18:21
+get { return TAUX_COM;
+1:19:03
+chef = sup;
+1:19:21
+//Chaque vente de cet employé va être comptabilisée pour la…
+1:19:27
+Pour générer le chèque de la période courante, réinitialise…
+1:19:57
+période courante, réinitialise ensuite les ventes de la…
+1:20:09
+get { return
+1:21:30
+//au salaire hebdomadaire.
+1:23:27
+internal class pDG : Superviseur
+1:26:54
+ig[] args)
+1:28:42
+TestHeritage
+1:29:12
+args)
+1:29:21
+static void Main(string[] args)
+1:30:03
+montantPourBonus += montant;
+1:32:42
