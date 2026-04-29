@@ -221,3 +221,10 @@ bower_components/
 # Learning progress tracking (optional - uncomment if you want to keep private)
 # progress/
 # notes/personal/
+05-references/course-materials/UDEM_H26_IFT1179/assignements/TP3/UDEM_H26_IFT1179_TP3
+
+# ============================================================================
+# Workspace-tools
+# ============================================================================
+/.claude/
+/.vscode/
